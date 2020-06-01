@@ -1,7 +1,30 @@
 
 // https://coderpad.io/DEYXXDM9
+//Thamer Allahabi
+
+//Your previous JavaScript content is preserved below:
+
+const _ = require('lodash');
+
+function sayHello() {
+  console.log('Hello, World');
+}
+
+_.times(5, sayHello);
 
 
+
+// Given an array of strings, group anagrams together.
+
+//   Example:
+
+// Input: ["eat", "tea", "tan", "ate", "nat", "bat"],
+//   Output:
+// [
+//   ["ate", "eat", "tea"],
+//   ["nat", "tan"],
+//   ["bat"]
+// ]
 
 /* 
 Your previous Java content is preserved below:
@@ -36,30 +59,9 @@ const groupAnagram = strs => {
 let strss = ["eat", "tea", "tan", "ate", "nat", "bat"];
 
 console.log(groupAnagram(strss));
-/* 
-Your previous JavaScript content is preserved below:
-
-const _ = require('lodash');
-
-function sayHello() {
-  console.log('Hello, World');
-}
-
-_.times(5, sayHello);
 
 
-/* 
-Given an array of strings, group anagrams together.
 
-Example:
-
-Input: ["eat", "tea", "tan", "ate", "nat", "bat"],
-Output:
-[
-  ["ate","eat","tea"],
-  ["nat","tan"],
-  ["bat"]
-]
 
 
 // solution Java :
@@ -95,8 +97,8 @@ class Solution {
     for(let i = 0 ; i < s.length; i++){
       map[s[i]] ? map[s[i]]++ : map[s[i]] = 1;
     }
-     for(let i = 0 ; i < t.length; i++){
-    if(map[t[i]])map[t[i]]--;
+    for(let i = 0 ; i < t.length; i++){
+     if(map[t[i]])map[t[i]]--;
        else return false;
      }
     return true;
